@@ -19,15 +19,15 @@
       enabled: true
       state: started
 
+  - name: Apache enabled and running
+    service:
+      name: httpd
+      enabled: true
+      state: started
+
   - name: firewalld permits http service
     firewalld:
       service: http
       permanent: true
       state: enabled
       immediate: yes
-
-  - name: Apache enabled and running
-    service:
-      name: httpd
-      enabled: true
-      state: started
