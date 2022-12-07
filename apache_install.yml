@@ -5,7 +5,7 @@
   tasks:
   - name: latest Apache version installed
     apt:
-      name: httpd
+      name: apache2
       state: latest
 
   - name: latest firewalld version installed
