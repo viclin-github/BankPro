@@ -21,7 +21,7 @@
 
   - name: Apache enabled and running
     service:
-      name: httpd
+      name: apache2
       enabled: true
       state: started
 
